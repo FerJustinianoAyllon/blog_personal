@@ -1,0 +1,137 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #333;
+    background: #f4f4f9;
+    line-height: 1.6;
+}
+
+.skip-link {
+    position: absolute;
+    top: -40px;
+    left: 0;
+    background: #1e3c72;
+    color: #fff;
+    padding: 8px 16px;
+    z-index: 100;
+    transition: top 0.3s;
+}
+.skip-link:focus {
+    top: 10px;
+}
+
+.contenedor {
+    display: flex;
+    min-height: 100vh;
+}
+
+.barralateral {
+    background: #1e3c72;
+    color: white;
+    width: 30%;
+    padding: 20px;
+}
+.perfil {
+    text-align: center;
+}
+.perfil img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+    border: 3px solid white;
+}
+.perfil h1 {
+    margin: 10px 0 5px;
+    font-size: 1.4rem;
+}
+.perfil p {
+    font-size: 14px;
+    font-style: italic;
+}
+
+.contacto h2 {
+    font-size: 1.2rem;
+    border-bottom: 1px solid rgba(255,255,255,0.5);
+    padding-bottom: 5px;
+    margin-top: 20px;
+}
+.contacto ul {
+    list-style: none;
+    padding: 0;
+}
+.contacto ul li {
+    margin: 8px 0;
+}
+.contacto a {
+    color: #fff;
+    text-decoration: underline;
+}
+.contacto a:focus,
+.contacto a:hover {
+    outline: 2px solid #ffeb3b; /* Amarillo accesible */
+}
+
+.contenido {
+    flex: 1;
+    padding: 40px;
+}
+.contenido h2 {
+    color: #1e3c72;
+    border-bottom: 2px solid #1e3c72;
+    padding-bottom: 5px;
+    margin-bottom: 15px;
+    font-size: 1.3rem;
+}
+
+.trabajo {
+    margin-bottom: 20px;
+}
+.trabajo h3 {
+    margin: 0;
+    color: #333;
+    font-size: 1.1rem;
+}
+.trabajo span {
+    font-size: 14px;
+    color: gray;
+}
+.trabajo p {
+    margin-top: 5px;
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+    gap: 15px;
+    background: #0d47a1;
+    padding: 10px;
+    justify-content: center;
+}
+header nav a {
+    color: #fff;
+    text-decoration: none;
+    padding: 6px 10px;
+    border-radius: 4px;
+}
+header nav a:hover,
+header nav a:focus {
+    background: #1565c0;
+    outline: 2px solid #ffeb3b;
+}
+
+footer {
+    background: #1e3c72;
+    color: #fff;
+    text-align: center;
+    padding: 15px;
+    margin-top: auto;
+    font-size: 0.9rem;
+}
