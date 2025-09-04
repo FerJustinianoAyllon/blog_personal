@@ -4,6 +4,15 @@
     box-sizing: border-box;
 }
 
+:root {
+  --color-primario: #1e3c72;
+  --color-secundario: #1565c0;
+  --color-fondo: #f4f4f9;
+  --color-texto: #333;
+  --color-acento: #ffeb3b;
+  --espaciado: 20px;
+}
+
 body {
     font-family: Arial, Helvetica, sans-serif;
     color: #333;
@@ -12,15 +21,16 @@ body {
 }
 
 .skip-link {
-    position: absolute;
-    top: -40px;
-    left: 0;
-    background: #1e3c72;
-    color: #fff;
-    padding: 8px 16px;
-    z-index: 100;
-    transition: top 0.3s;
+  position: absolute;
+  top: -40px;
+  left: 0;
+  background: var;
+  color: #fff;
+  padding: 8px 16px;
+  z-index: 100;
+  transition: top 0.3s;
 }
+
 .skip-link:focus {
     top: 10px;
 }
@@ -31,11 +41,17 @@ body {
 }
 
 .barralateral {
-    background: #1e3c72;
-    color: white;
+    background: var;
+    color:#fff;
     width: 30%;
-    padding: 20px;
+    padding: var;
 }
+
+.contenido {
+  flex: 1;
+  padding: 40px;
+}
+
 .perfil {
     text-align: center;
 }
@@ -44,7 +60,7 @@ body {
     height: 120px;
     border-radius: 50%;
     margin-bottom: 10px;
-    border: 3px solid white;
+    border: 3px solid #fff;
 }
 .perfil h1 {
     margin: 10px 0 5px;
@@ -74,16 +90,12 @@ body {
 }
 .contacto a:focus,
 .contacto a:hover {
-    outline: 2px solid #ffeb3b; /* Amarillo accesible */
+    outline: 2px solid var;
 }
 
-.contenido {
-    flex: 1;
-    padding: 40px;
-}
 .contenido h2 {
-    color: #1e3c72;
-    border-bottom: 2px solid #1e3c72;
+    color: var;
+    border-bottom: 2px solid var;
     padding-bottom: 5px;
     margin-bottom: 15px;
     font-size: 1.3rem;
@@ -94,7 +106,7 @@ body {
 }
 .trabajo h3 {
     margin: 0;
-    color: #333;
+    color: var;
     font-size: 1.1rem;
 }
 .trabajo span {
@@ -114,6 +126,7 @@ header nav ul {
     background: #0d47a1;
     padding: 10px;
     justify-content: center;
+    flex-wrap: wrap;
 }
 header nav a {
     color: #fff;
@@ -123,15 +136,45 @@ header nav a {
 }
 header nav a:hover,
 header nav a:focus {
-    background: #1565c0;
-    outline: 2px solid #ffeb3b;
+    background: var;
+    outline: 2px solid var;
 }
 
 footer {
-    background: #1e3c72;
+    background: var;
     color: #fff;
     text-align: center;
     padding: 15px;
     margin-top: auto;
     font-size: 0.9rem;
+}
+
+@media (max-width: 768px) {
+  .contenedor {
+    flex-direction: column;
+  }
+  .barralateral {
+    width: 100%;
+    text-align: center;
+  }
+  .contenido {
+    padding: 20px;
+  }
+  header nav ul {
+    flex-direction: column;
+    align-items: center;
+  }
+  header nav li {
+    margin: 5px 0;
+  }
+}
+
+@media (min-width: 1200px) {
+  .contenido {
+    padding: 60px;
+  }
+  .perfil img {
+    width: 150px;
+    height: 150px;
+  }
 }
