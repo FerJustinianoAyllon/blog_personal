@@ -91,6 +91,26 @@ body {
   color: #000; 
 }
 
+.barralateral .contenedor-contacto,
+.barralateral .contenedor-habilidades {
+  background: #fff; 
+  border: 1px solid rgba(0,0,0,0.15);  
+  border-radius: 10px;                 
+  padding: 20px;                        
+  margin: 15px 10px;                    
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1); 
+}
+
+.barralateral h2 {
+  margin-bottom: 10px;
+  font-size: 1.1rem;
+  color: #000; 
+}
+
+.barralateral section {
+    color: var(--color-texto); 
+  }
+
 .contenido {
   flex: 1;
   padding: 40px;
@@ -141,13 +161,52 @@ body {
     margin: 8px 0;
 }
 .contacto a {
-    color: #fff;
+    color: inherit;
     text-decoration: underline;
 }
 .contacto a:focus,
 .contacto a:hover {
+  color: #000;
     outline: 2px solid var(--color-acento);
 }
+
+.habilidad {
+  margin-bottom: 15px;
+}
+
+.habilidad span {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 5px;
+  color: #1a0e0a;
+}
+
+.barra {
+  background: #e0e0e0;
+  border-radius: 8px;
+  overflow: hidden;
+  height: 22px;
+  box-shadow: inset 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.nivel {
+  height: 100%;
+  text-align: right;
+  padding-right: 8px;
+  color: #fff;
+  font-size: 0.85rem;
+  font-weight: bold;
+  line-height: 22px;
+  border-radius: 8px;
+  transition: width 1s ease-in-out;
+}
+
+.nivel.html { background: #e44d26; }       
+.nivel.css { background: #264de4; }        
+.nivel.js { background: #f0db4f; color:#000; }  
+.nivel.siat { background: #009688; }      
+.nivel.arquetipo { background: #6a1b9a; }  
+
 
 .trabajo {
     margin-bottom: 20px;
@@ -227,6 +286,38 @@ a:focus-visible {
   font-size: 0.95rem;
   color: var(--color-texto);
 }
+
+.contenedor-certificaciones {
+    background: #fff;
+    border-radius: 10px;
+    padding: 20px;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.contenedor-certificaciones h2 {
+    color: var(--color-primario);
+    border-bottom: 2px solid var(--color-acento);
+    padding-bottom: 5px;
+    margin-bottom: 15px;
+    font-size: 1.3rem;
+}
+
+.contenedor-certificaciones ul {
+    list-style: none; 
+    padding: 0;
+}
+
+.contenedor-certificaciones li {
+    margin: 10px 0;
+    padding-left: 5px;
+    font-size: 0.95rem;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
 
 header nav ul {
     list-style: none;
