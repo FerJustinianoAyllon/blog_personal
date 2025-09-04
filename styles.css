@@ -52,6 +52,18 @@ body {
   padding: 40px;
 }
 
+.contenido h2 {
+    color: var(--color-primario);
+    border-bottom: 2px solid var(--color-acento);
+    padding-bottom: 5px;
+    margin-bottom: 15px;
+    font-size: 1.3rem;
+}
+
+.contenido p {
+    color: #3E2F2F;
+}
+
 .perfil {
     text-align: center;
 }
@@ -93,14 +105,6 @@ body {
     outline: 2px solid var(--color-acento);
 }
 
-.contenido h2 {
-    color: var(--color-primario);
-    border-bottom: 2px solid var(--color-acento);
-    padding-bottom: 5px;
-    margin-bottom: 15px;
-    font-size: 1.3rem;
-}
-
 .trabajo {
     margin-bottom: 20px;
 }
@@ -111,7 +115,7 @@ body {
 }
 .trabajo span {
     font-size: 14px;
-    color: gray;
+    color: #5A4031;
 }
 .trabajo p {
     margin-top: 5px;
@@ -136,7 +140,8 @@ header nav a {
 }
 header nav a:hover,
 header nav a:focus {
-    background: var(--color-acento);
+    background: #D99873;
+    color: #3E2F2F; 
     outline: 2px solid var(--color-acento);
 }
 
