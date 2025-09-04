@@ -64,7 +64,7 @@ body {
 
 .barralateral {
     background: var(--color-secundario);
-    color: #fff;
+    color: #1a0e0a;
     width: 30%;
     padding: var(--espaciado);
     overflow-y: auto;
@@ -74,6 +74,21 @@ body {
     footer,
     header nav a {
     color: #FAF5EF; 
+}
+
+.barralateral h2,
+.barralateral li,
+.barralateral a {
+  color: #1a0e0a; 
+}
+
+.barralateral a {
+  text-decoration: underline;
+}
+
+.barralateral a:hover,
+.barralateral a:focus {
+  color: #000; 
 }
 
 .contenido {
@@ -136,6 +151,11 @@ body {
 
 .trabajo {
     margin-bottom: 20px;
+    background: #fff;
+    border-radius: 10px;
+    padding: 15px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 .trabajo h3 {
     margin: 0;
@@ -150,6 +170,62 @@ body {
     margin-top: 5px;
     font-size: 14px;
     line-height: 1.5;
+}
+
+.trabajo:hover,
+.trabajo:focus-within {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 14px rgba(0,0,0,0.15);
+}
+
+.trabajo img {
+  transition: transform 0.4s ease;
+}
+
+.trabajo:hover img {
+  transform: scale(1.05);
+}
+
+a {
+  transition: color 0.3s ease, background 0.3s ease;
+}
+
+a:focus-visible {
+  outline: 3px solid var(--color-acento);
+  outline-offset: 3px;
+  border-radius: 6px;
+}
+
+.contenedor-experiencia ul {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 20px;
+}
+
+.contenedor-experiencia li {
+  list-style: none;
+}
+
+.contenedor-proyectos {
+  background: #fff;
+  border-radius: 10px;
+  padding: 20px;
+  margin-top: 25px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.proyecto {
+  margin-bottom: 20px;
+}
+
+.proyecto h3 {
+  font-size: 1.2rem;
+  color: var(--color-primario);
+}
+
+.proyecto p {
+  font-size: 0.95rem;
+  color: var(--color-texto);
 }
 
 header nav ul {
