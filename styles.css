@@ -13,6 +13,28 @@
   --espaciado: 20px;
 }
 
+.contenedor-sobre-mi,
+.contenedor-educacion,
+.contenedor-experiencia,
+.contenedor-contacto,
+.contenedor-habilidades {
+    background: #fff;
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 25px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.foto-experiencia {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+    display: block;
+    margin: 10px 0;
+    border-radius: 10px;
+    border: 2px solid var(--color-acento);
+}
+
 body {
     font-family: Arial, Helvetica, sans-serif;
     color: var(--color-texto);
@@ -45,6 +67,7 @@ body {
     color: #fff;
     width: 30%;
     padding: var(--espaciado);
+    overflow-y: auto;
 }
 
 .contenido {
@@ -157,6 +180,10 @@ footer {
 @media (max-width: 768px) {
   .contenedor {
     flex-direction: column;
+  }
+  .foto-proyecto {
+    max-width: 80%;
+    margin: 10px auto;
   }
   .barralateral {
     width: 100%;
