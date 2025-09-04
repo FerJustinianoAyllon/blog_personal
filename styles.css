@@ -5,18 +5,18 @@
 }
 
 :root {
-  --color-primario: #1e3c72;
-  --color-secundario: #1565c0;
-  --color-fondo: #f4f4f9;
-  --color-texto: #333;
-  --color-acento: #ffeb3b;
+  --color-primario: #8B5E3C;
+  --color-secundario: #A67C52;
+  --color-fondo: #FAF5EF;
+  --color-texto: #3E2F2F;
+  --color-acento: #D99873;
   --espaciado: 20px;
 }
 
 body {
     font-family: Arial, Helvetica, sans-serif;
-    color: #333;
-    background: #f4f4f9;
+    color: var(--color-texto);
+    background: var(--color-fondo);
     line-height: 1.6;
 }
 
@@ -24,7 +24,7 @@ body {
   position: absolute;
   top: -40px;
   left: 0;
-  background: var;
+  background: var(--color-primario);
   color: #fff;
   padding: 8px 16px;
   z-index: 100;
@@ -41,10 +41,10 @@ body {
 }
 
 .barralateral {
-    background: var;
-    color:#fff;
+    background: var(--color-secundario);
+    color: #fff;
     width: 30%;
-    padding: var;
+    padding: var(--espaciado);
 }
 
 .contenido {
@@ -64,7 +64,7 @@ body {
 }
 .perfil h1 {
     margin: 10px 0 5px;
-    font-size: 1.4rem;
+    font-size: 1.6rem;
 }
 .perfil p {
     font-size: 14px;
@@ -90,12 +90,12 @@ body {
 }
 .contacto a:focus,
 .contacto a:hover {
-    outline: 2px solid var;
+    outline: 2px solid var(--color-acento);
 }
 
 .contenido h2 {
-    color: var;
-    border-bottom: 2px solid var;
+    color: var(--color-primario);
+    border-bottom: 2px solid var(--color-acento);
     padding-bottom: 5px;
     margin-bottom: 15px;
     font-size: 1.3rem;
@@ -106,7 +106,7 @@ body {
 }
 .trabajo h3 {
     margin: 0;
-    color: var;
+    color: var(--color-secundario);
     font-size: 1.1rem;
 }
 .trabajo span {
@@ -123,7 +123,7 @@ header nav ul {
     list-style: none;
     display: flex;
     gap: 15px;
-    background: #0d47a1;
+    background: var(--color-secundario);
     padding: 10px;
     justify-content: center;
     flex-wrap: wrap;
@@ -136,12 +136,12 @@ header nav a {
 }
 header nav a:hover,
 header nav a:focus {
-    background: var;
-    outline: 2px solid var;
+    background: var(--color-acento);
+    outline: 2px solid var(--color-acento);
 }
 
 footer {
-    background: var;
+    background: var(--color-secundario);
     color: #fff;
     text-align: center;
     padding: 15px;
