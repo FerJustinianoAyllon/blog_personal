@@ -5,13 +5,13 @@
 }
 
 :root {
-  --color-primario: #8B5E3C;
-  --color-secundario: #A67C52;
+  --color-primario: #5A2E0C;   
+  --color-secundario: #6B4226; 
   --color-fondo: #FAF5EF;
-  --color-texto: #3E2F2F;
-  --color-acento: #D99873;
-  --espaciado: 20px;
+  --color-texto: #2B1E1E;     
+  --color-acento: #C77953;     
 }
+
 
 .contenedor-sobre-mi,
 .contenedor-educacion,
@@ -68,6 +68,12 @@ body {
     width: 30%;
     padding: var(--espaciado);
     overflow-y: auto;
+}
+
+.barralateral,
+    footer,
+    header nav a {
+    color: #FAF5EF; 
 }
 
 .contenido {
@@ -163,8 +169,8 @@ header nav a {
 }
 header nav a:hover,
 header nav a:focus {
-    background: #D99873;
-    color: #3E2F2F; 
+    background: var(--color-acento);
+    color: #fff;
     outline: 2px solid var(--color-acento);
 }
 
