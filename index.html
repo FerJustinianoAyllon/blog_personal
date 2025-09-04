@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,6 +11,7 @@
     {
       "@context": "https://schema.org",
       "@type": "Person",
+      "@language": "es",
       "name": "Fernanda Justiniano Ayllon",
       "jobTitle": "Técnico Superior en Sistemas Informáticos y Contaduría General",
       "url": "https://tu-sitio-web.com",
@@ -19,14 +20,12 @@
     </script>
 </head>
 <body>
-    <body>
+    <a href="#main-content" class="skip-link">Ir al contenido principal</a>
 
-    <a href="#main-content" class="skip-link">Saltar al contenido principal</a>
-
-    <header>
-        <nav>
+    <header role="banner">
+        <nav aria-label="Menú principal">
             <ul>
-                <li><a href="#sobre-mi">Sobre mí</a></li>
+                <li><a href="#sobre-mi" aria-current="page">Sobre mí</a></li>
                 <li><a href="#habilidades">Habilidades</a></li>
                 <li><a href="#educacion">Educación</a></li>
                 <li><a href="#experiencia">Experiencia</a></li>
@@ -36,7 +35,7 @@
     </header>
 
     <div class="contenedor">
-        <aside class="barralateral" aria-label="Información de perfil">
+        <aside class="barralateral" role="complementary" aria-label="Información de perfil">
             <div class="perfil">
                 <img src="foto.png" alt="Foto de Fernanda Justiniano" loading="lazy">
                 <h1>Fernanda Justiniano Ayllon</h1>
@@ -47,14 +46,14 @@
             <section id="contacto" class="contacto">
                 <h2>Contacto</h2>
                 <ul>
-                    <li>📞 <a href="tel:+59165144720">65144720</a></li>
-                    <li>✉️ <a href="mailto:fernandajustininoayllon@gmail.com">fernandajustininoayllon@gmail.com</a></li>
+                    <li>📞 <a href="tel:+59165144720">Llamar al 65144720</a></li>
+                    <li>✉️ <a href="mailto:fernandajustininoayllon@gmail.com">Enviar correo a fernandajustininoayllon@gmail.com</a></li>
                     <li>📍 Calle Menchuco Nro 1245, Zona Sopocachi, La Paz</li>
                 </ul>
             </section>
         </aside>
 
-        <main id="main-content" class="contenido">
+        <main id="main-content" role="main" class="contenido">
             <article id="sobre-mi">
                 <h2>Acerca de mí</h2>
                 <p>Mi nombre es Fernanda Justiniano y me interesa el desarrollo Web, 
@@ -75,41 +74,56 @@
 
             <section id="educacion">
                 <h2>Educación</h2>
-                <p><strong>Carrera en Contaduría General</strong><br>
-                   Instituto Técnico de Educación Comercial "La Paz"<br>
-                   2019-2021</p>
-                <p><strong>Carrera en Sistemas Informáticos</strong><br>
-                   Instituto Técnico de Educación Comercial Americano<br>
-                   2022-2024</p>
+                <ul>
+                    <li>
+                        <strong>Carrera en Contaduría General</strong><br>
+                        Instituto Técnico de Educación Comercial "La Paz"<br>
+                        <time datetime="2019">2019</time> - <time datetime="2021">2021</time>
+                    </li>
+                    <li>
+                        <strong>Carrera en Sistemas Informáticos</strong><br>
+                        Instituto Técnico de Educación Comercial Americano<br>
+                        <time datetime="2022">2022</time> - <time datetime="2024">2024</time>
+                    </li>
+                </ul>
             </section>
+
 
             <section id="experiencia">
                 <h2>Experiencia Laboral</h2>
-
-                <article class="trabajo">
-                    <h3>Cajera</h3>
-                    <span>Empresa Maredu Games S.R.L. | 2018 - 2019</span>
-                    <p>Atención en caja.</p>
-                </article>
-
-                <article class="trabajo">
-                    <h3>Recepcionista</h3>
-                    <span>Clínica Estética Revival | 2021 - 2022</span>
-                    <p>Recepcionista y atención al cliente.</p>
-                </article>
-
-                <article class="trabajo">
-                    <h3>Auxiliar Contable</h3>
-                    <span>Empresa Mundo de la Nutrición S.R.L. | 2023 - Presente</span>
-                    <p>Registros contables, pago de aportes patronales e impuestos.</p>
-                </article>
+                <ul>
+                    <li>
+                        <article class="trabajo">
+                            <h3>Cajera</h3>
+                            <p><strong>Empresa Maredu Games S.R.L.</strong><br>
+                            <time datetime="2018">2018</time> - <time datetime="2019">2019</time></p>
+                            <p>Atención en caja.</p>
+                        </article>
+                    </li>
+                    <li>
+                        <article class="trabajo">
+                            <h3>Recepcionista</h3>
+                            <p><strong>Clínica Estética Revival</strong><br>
+                            <time datetime="2021">2021</time> - <time datetime="2022">2022</time></p>
+                            <p>Recepcionista y atención al cliente.</p>
+                        </article>
+                    </li>
+                    <li>
+                        <article class="trabajo">
+                            <h3>Auxiliar Contable</h3>
+                            <p><strong>Empresa Mundo de la Nutrición S.R.L.</strong><br>
+                            <time datetime="2023">2023</time> - <time datetime="2025">Presente</time></p>
+                            <p>Registros contables, pago de aportes patronales e impuestos.</p>
+                        </article>
+                    </li>
+                </ul>
             </section>
+
         </main>
     </div>
 
-    <footer>
+    <footer role="contentinfo">
         <p>&copy; 2025 Fernanda Justiniano. Todos los derechos reservados.</p>
     </footer>
-</body>
 </body>
 </html>
