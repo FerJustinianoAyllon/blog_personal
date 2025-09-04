@@ -201,10 +201,10 @@ body {
   transition: width 1s ease-in-out;
 }
 
-.nivel.html { background: #e44d26; }       
+.nivel.html { background: #e44d26; color:#000;}       
 .nivel.css { background: #264de4; }        
 .nivel.js { background: #f0db4f; color:#000; }  
-.nivel.siat { background: #009688; }      
+.nivel.siat { background: #009688; color:#000;}      
 .nivel.arquetipo { background: #6a1b9a; }  
 
 
